@@ -9,7 +9,8 @@ import gr.cosmart.interview.domain.Role;
 import gr.cosmart.interview.resource.rest.View;
 
 public class UserDTO {
-	
+	@JsonView(View.Summary.class)
+	private Integer userID;
 	@JsonView(View.Summary.class)
     private String email;
 	@JsonView(View.Summary.class)
@@ -35,13 +36,13 @@ public class UserDTO {
 //		this.user_roles = user_roles;
 //	}
 //
-//	public Integer getUserID() {
-//		return userID;
-//	}
-//
-//	public void setUserID(Integer userID) {
-//		this.userID = userID;
-//	}
+	public Integer getUserID() {
+		return userID;
+	}
+
+	public void setUserID(Integer userID) {
+		this.userID = userID;
+	}
 
 	public String getEmail() {
 		return email;

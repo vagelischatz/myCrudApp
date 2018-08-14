@@ -13,7 +13,7 @@ public abstract class UserMapper {
 
 	public abstract UserDTO userToUserDTO(User user);
 	
-	@Mapping(source ="userid", target="User")
+	@Mapping(source ="userid", target="userID")
 	public abstract <List>UserDTO userToListUserDTO(Integer userid);
 
 	// @Mapping(source = "userId", target = "user")
